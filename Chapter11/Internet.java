@@ -1,3 +1,30 @@
+// One of the many nice things about the Internet is that it doesn't have 
+// a central server anywhere in the world. That is, the Internet is 
+// decentralized. In theory, this means that if a router (a device that 
+// makes sure messages reach the proper destination) connected to the 
+// Internet crashes, it's still possible to create a connection between 
+// any two remaining routers. In this problem you are to examine how true 
+// this is, given a configuration of how the routers are connected to each 
+// other. Two routers can be connected either directly or indirectly (i.e. 
+// by passing through one or more directly connected routers). Initially, 
+// all routers are connected to each other.
+
+// A router is an articulation point if the removal of that router will 
+// split the remaining routers into (at least) two parts. That is, if 
+// there exist two routers, neither of which is the removed router, which 
+// after the removal can't connect which each other.
+
+// The configuration will be given as a String[], where each element 
+// describes one router (the first element being router 0, etc). Each 
+// element will contain a space separated sequence of non-negative 
+// integers. If the integer j appears in element i then router i is 
+// directly connected with router j. There will be exactly one space 
+// between the integers, and there will be no leading or trailing 
+// spaces. No integer will contain any unnecessary leading zeros. 
+// All direct connections are bi-directional, so if the integer i is 
+// in element j, then the integer j will be in element i. All integers 
+// will be valid routers.
+
 import java.util.*;
 
 public class Internet {
